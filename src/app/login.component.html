@@ -1,0 +1,20 @@
+<form #loginForm = "ngForm" (ngSubmit) = cadastrarUsuario(loginForm)>
+	<label for="nome">nome</label>
+	<input type="text" name="nome" id="nome" ngModel >
+
+	<label for="senha">Senha</label>
+	<input type="password" id="senha" name ="senha" ngModel >	
+	<button type="submit">Logar</button>
+</form>
+
+
+
+<!-- two way bind<form #loginForm = "ngForm" (ngSubmit) = cadastrarUsuario(loginForm)>
+	<label for="nome">nome</label>
+	<input type="text" name="nome" id="nome" [(ngModel)]="nome">
+
+	<label for="senha">Senha</label>
+	<input type="password" id="senha" name ="senha"  [(ngModel)]="senha">
+	
+	<button type="submit">Logar</button>
+</form>-->

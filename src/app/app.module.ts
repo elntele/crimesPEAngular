@@ -5,6 +5,7 @@ import { PaginaInicialComponent }  from './pagina-inicial.component';
 import {LoginComponent} from './login.component';
 import { RouterModule } from '@angular/router';
 import {FormsModule} from '@angular/forms';
+import {UsuarioService} from './usuario.service';
 
 @NgModule({
   imports: [ 
@@ -27,6 +28,7 @@ import {FormsModule} from '@angular/forms';
   	])
    ],
   declarations: [ AppComponent, PaginaInicialComponent, LoginComponent ],
+  providers: [UsuarioService],  
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
